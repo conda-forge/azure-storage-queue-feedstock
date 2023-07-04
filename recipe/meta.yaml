@@ -1,6 +1,6 @@
 {% set name = "azure-storage-queue" %}
-{% set version = "12.1.5" %}
-{% set sha256 = "f0f2f4064120c05a0b594cb504321b523cefd47329a047dd885bb30978100180" %}
+{% set version = "12.1.6" %}
+{% set sha256 = "79e4ef589db6b5272f052309d5525960b20fffbfe61958a0007dc4e7a40b68e2" %}
 
 package:
   name: {{ name|lower }}
