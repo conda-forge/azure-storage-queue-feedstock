@@ -1,6 +1,6 @@
 {% set name = "azure-storage-queue" %}
-{% set version = "12.0.0" %}
-{% set sha256 = "e56a744ed9fdea7e51750142429a192e0c26f67b0e113e9d56abfad674d0d844" %}
+{% set version = "12.6.0" %}
+{% set sha256 = "19a01f1d860b5e59789e1727ce6aec4f0903ac56307a564c4fa777fb38b6b50d" %}
 
 package:
   name: {{ name|lower }}
@@ -17,7 +17,7 @@ build:
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
-  build:
+  host:
     - python >=3.6
     - setuptools
     - pip
@@ -45,7 +45,7 @@ about:
   license: Apache-2.0
   license_family: Apache
   license_file: {{ RECIPE_DIR }}/LICENSE.txt
-  summary: 'Microsoft Azure Storage Queue Client Library for Python'
+  summary: Microsoft Azure Storage Queue Client Library for Python
 
 extra:
   recipe-maintainers:
