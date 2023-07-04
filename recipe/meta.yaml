@@ -1,6 +1,6 @@
 {% set name = "azure-storage-queue" %}
-{% set version = "12.1.4" %}
-{% set sha256 = "1c4ae6168acf179988230f15c4d47b62ac6561c023e0d47913e8b0a36be5ea9f" %}
+{% set version = "12.1.5" %}
+{% set sha256 = "f0f2f4064120c05a0b594cb504321b523cefd47329a047dd885bb30978100180" %}
 
 package:
   name: {{ name|lower }}
@@ -51,3 +51,4 @@ extra:
   recipe-maintainers:
     - xhochy
     - awvwgk
+    - tvogels
