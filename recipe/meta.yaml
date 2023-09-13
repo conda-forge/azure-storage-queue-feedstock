@@ -1,6 +1,6 @@
 {% set name = "azure-storage-queue" %}
-{% set version = "12.6.0" %}
-{% set sha256 = "19a01f1d860b5e59789e1727ce6aec4f0903ac56307a564c4fa777fb38b6b50d" %}
+{% set version = "12.7.0" %}
+{% set sha256 = "08bd6ced5bac209a59e82dc8e3ee71534e045aebde18c81aefdadaac86d2deb7" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.zip
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.zip
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
@@ -17,7 +17,7 @@ build:
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
-  build:
+  host:
     - python >=3.6
     - setuptools
     - pip
