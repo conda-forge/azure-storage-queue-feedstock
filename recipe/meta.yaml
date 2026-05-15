@@ -1,6 +1,6 @@
 {% set name = "azure-storage-queue" %}
-{% set version = "12.15.0" %}
-{% set sha256 = "4e01dcae5aefd0c463f7bae5c75c8a91f955c893f14ed7590fc0cd447ac4666d" %}
+{% set version = "12.16.0" %}
+{% set sha256 = "28da532d0fb5e9242e520a66106f6a3e56000295856b20ef2f0d3084c9344ba2" %}
 
 package:
   name: {{ name|lower }}
@@ -24,7 +24,7 @@ requirements:
   run:
     - typing_extensions >=4.6.0
     - python >={{ python_min }}
-    - azure-core >=1.30.0
+    - azure-core >=1.37.0
     - azure-common >=1.1.5
     - azure-storage-common >=1.3.0
     - cryptography >=2.1.4
